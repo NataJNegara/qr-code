@@ -1,15 +1,15 @@
 "use client";
 
 import { Scanner } from "@yudiel/react-qr-scanner";
-import { useState } from "react";
+// import { useState } from "react";
 
 const ScannerPage = () => {
-  const [scannedQR, setScannedQR] = useState<string | null>(null);
+  //   const [scannedQR, setScannedQR] = useState<string | null>(null);
 
   return (
     <div className="w-3xs h-64">
-      <Scanner onScan={(result) => setScannedQR(result.toString())} />
-      {scannedQR && <p>{scannedQR}</p>}
+      <Scanner onScan={(result) => console.log(result)} />
+      {/* {scannedQR && <p>{scannedQR}</p>} */}
     </div>
   );
 };
