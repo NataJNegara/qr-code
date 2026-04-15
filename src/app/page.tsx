@@ -19,6 +19,8 @@ export default function Home() {
     setQrValue(generatedValue);
   };
 
+  console.log("test");
+
   const handleSave = () => {
     if (savedQR) return;
     setSavedQR(qrValue);
